@@ -1,0 +1,273 @@
+.main-section {
+  margin-top: 26px;
+  display: flex;
+  gap: 50px;
+}
+
+.navigation-categories {
+  background-color: #fbfbfb;
+}
+
+.categories {
+  margin-top: 14px;
+  margin-left: 18px;
+}
+
+.title-navigation {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.block-link-navigation {
+  margin-top: 7px;
+  margin-left: 12px;
+}
+
+.categories-link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 40px;
+  color: #3d3d3d;
+}
+
+.categories-link:hover {
+  font-weight: 700;
+  color: #46a358;
+}
+
+.image-sales {
+  width: 310px;
+  height: 470px;
+}
+
+.cards-products-block {
+  width: 840px;
+}
+
+.sort-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-navigation-link {
+  padding-bottom: 7px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #3d3d3d;
+  margin-right: 38px;
+  align-items: center;
+  position: relative;
+}
+
+.sort-navigation-link:hover::before {
+  display: block;
+}
+
+.sort-navigation-link:hover {
+  font-weight: 700;
+  color: #46a358;
+}
+
+.sort-navigation-link::before {
+  content: "";
+  height: 3px;
+  background-color: #46A358;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: 1;
+}
+
+.sort-navigation-link:last-child {
+  margin-right: 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 30px;
+  row-gap: 70px;
+  margin-top: 31px;
+  margin-bottom: 90px;
+  font-size: 0;
+}
+
+.card:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.link-card {
+  text-decoration: none;
+}
+
+.title-card {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3d3d3d;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  color: #46a358;
+}
+
+.image-background-card:hover::before {
+  display: block;
+}
+
+.link-card {
+  position: relative;
+}
+
+.card-hover {
+  display: none;
+}
+
+.image-background-card:hover > .card-hover {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  left: 25%;
+  bottom: 7px;
+}
+
+.button-card {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.card-hover-icon {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 9px;
+  width: 35px;
+  height: 35px;
+}
+
+.image-background-card::before {
+  content: "";
+  height: 1px;
+  background-color: #46A358;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: 1;
+}
+
+.page-block {
+  text-align: end;
+  display: block;
+  font-size: 0;
+}
+
+.link-page {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 18px;
+  color: #3d3d3d;
+  line-height: 16px;
+  margin-right: 10px;
+  border: #e5e5e5 solid 1px;
+  border-radius: 4px;
+  padding: 9px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.link-page:hover {
+  background-color: #46a358;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.link-page:last-child {
+  margin-right: 0;
+}
+
+.right-sort-block {
+  display: inline-block;
+}
+
+.right-sort {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+
+.arrow-down-sort-list {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.image-background-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 258px;
+  height: 300px;
+  background-color: #fbfbfb;
+  text-align: center;
+  position: relative;
+}
+
+.image-card {
+  vertical-align: middle;
+}
+
+.sale-label {
+  background-color: #46a358;
+  padding: 7px 8px 6px 9px;
+  position: absolute;
+  left: 0;
+  top: 14px;
+}
+
+.text-label-sale {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.old-price-card {
+  color: #a5a5a5;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  text-decoration: line-through;
+}
+
+.prices-card {
+  display: flex;
+  gap: 16px;
+}
+

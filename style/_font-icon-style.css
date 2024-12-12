@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'GreenShop';
+  src: url('../fonts/fonts-icon/GreenShop.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'GreenShop' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Arrow---Right-sharp:before {
+  content: "\e902";
+}
+.icon-Card:before {
+  content: "\e905";
+}
+.icon-Favorite:before {
+  content: "\e906";
+}
+.icon-Instagram:before {
+  content: "\e907";
+}
+.icon-Linkedin:before {
+  content: "\e908";
+}
+.icon-Logo-name:before {
+  content: "\e90a";
+}
+.icon-Logo:before {
+  content: "\e90b";
+}
+.icon-Search:before {
+  content: "\e90d";
+}
+.icon-shopping-1:before {
+  content: "\e90e";
+}
+.icon-Twitter:before {
+  content: "\e90f";
+}
+.icon-Union:before {
+  content: "\e910";
+}
+.icon-close:before {
+  content: "\e900";
+  /* color: #46a358; */
+}

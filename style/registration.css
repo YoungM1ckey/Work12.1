@@ -1,0 +1,147 @@
+/* .position-modul {
+  box-shadow: inset;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+} */
+
+.wrapper-log {
+  /* width: 500px; */
+  display: none;
+  flex-direction: column;
+  /* align-items: center; */
+  /* outline: 2px solid purple; */
+  border-bottom: 10px solid #46a358;
+  /* box-shadow: inset; */
+  position: absolute;
+  top: 50%; /* Центрирование по вертикали */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
+  padding-left: 100px;
+  padding-right: 100px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+/* .close-btn {
+  align-items: end;
+  background-color: none;
+  border: none;
+} */
+.icon-close {
+  color: red;
+}
+
+.close-btn {
+  display: flex;
+  align-items: end;
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  color: #3d3d3d;
+  transition-duration: 0.4s;
+}
+.close-btn:hover {
+  color: #46a358;
+  cursor: pointer;
+  transform: rotate(120deg);
+}
+.input {
+  width: 300px;
+  height: 40px;
+  padding: 12px 0 12px 14px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+}
+
+.input::placeholder {
+  color: #5a5a5a;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.link-sing {
+  text-decoration: none;
+  color: #3d3d3d;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 16px ;
+}
+
+.link-block {
+  text-align: center;
+  margin-top: 52px;
+}
+
+.link-sing:hover {
+  color: #46a358;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.separation {
+  font-weight: 250;
+  font-size: 18px;
+  line-height: 16px;
+  cursor: default;
+}
+
+.text-reg {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 36px;
+  margin-bottom: 27px;
+  text-align: center;
+}
+
+.login-for-service {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.link-log {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  color: #727272;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  width: 300px;
+  height: 40px;
+  gap: 9px;
+}
+
+
+
+.icon-service {
+  align-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.btn-reg {
+  margin-top: 41px;
+  width: 300px;
+  height: 40px;
+  background-color: #46a358;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+}
