@@ -1,733 +1,1059 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GREENSHOP</title>
-  <link rel="stylesheet" href="./style/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="wrapper">
-    <header class="header">
-      <a class="logo" href="index.html">
-        <!-- <span class="icon-Logo-name logo-header"></span> -->
-        <img class="imglogo" src="./images/logo.png" alt="logo_greenshop" width="150" height="34">
-      </a>
-      <nav class="navigation-header">
-        <a class="link-nav" href="index.html">Home</a>
-        <a class="link-nav" href="#">Shop</a>
-        <div class="navigation-item-list">
-          <a class="link-nav link-nav-sub-list" href="#">Plant Care</a>
-            <div class="sub-list-item">
-              <div class="sub-list-color">
-                <a href="#" class="sub-list">Drainage</a>
-                <a href="#" class="sub-list">Fungicides</a>
-                <a href="#" class="sub-list">Fertilizer</a>
-                <div class="sub-list-item-level2">
-                  <a href="#" class="sub-list sub-level-2">Priming
-                    <span class="icon-right-arrow-menu"></span>
-                    <!-- <img class="arrow-right-sublist" src="./images/arrow-right-sub-list.png" alt="arrow-right" width="6" height="10"> -->
-                    <!-- <img class="arrow-left-sublist" src="./images/arrow-left-sub-list.png" alt="arrow-left" width="6" height="10"> -->
-                  </a>
-                  <div class="navigation-sublist2">
-                    <div class="sub-list-padding-2-level">
-                      <a href="#" class="sub-list">Universal</a>
-                      <a href="#" class="sub-list">For Ficus</a>
-                      <a href="#" class="sub-list">For Cacti</a>
-                      <a href="#" class="sub-list">For Citrus</a>
-                      <a href="#" class="sub-list">For those in bloom</a>
-                      <a href="#" class="sub-list">For Orchids</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-        <a class="link-nav" href="#">Blog</a>
-      </nav>
-      <div class="block-right-header">
-        <button class="button-header-search">
-        <span class="icon-header icon-Search"></span>
-        </button>
-        <span class="icon-header icon-Card"></span>
-        <button id="opensind" type="button" class="button-login">
-          <img class="icon-log" src="./images/iconlogin.png" alt="icon-logo" width="20" height="20">
-          Login
-        </button>
-      </div>
-    </header>
-    <section class="content">
-      <div class="block-left-header">
-        <h1 class="text-content welcome-text">
-          Welcome to GreenShop
-        </h1>
-        <h2 class="text-title">
-          Let’s Make a Better <span class="text-green">Planet</span>
-        </h2>
-        <p class="text-descr">
-          We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!
-        </p>
-        <a class="link-shop" href="#">
-          SHOP NOW
-        </a>
-      </div>
-      <div class="image-right-header">
-        <img src="./images/flower.png" alt="flower" width="507" height="450">
-      </div>
-    </section>
-    <main>
-      <section class="main-section">
-        <div class="navigation-categories">
-          <div class="categories">
-            <h2 class="title-navigation">
-              Categories
-            </h2>
-            <div class="block-link-navigation">
-              <a class="categories-link" href="#">
-                House Plants
-              </a>
-              <br>
-              <a class="categories-link" href="#">
-                Potter Plants
-              </a>
-              <br>
-              <a class="categories-link" href="#">
-                Seeds
-              </a>
-              <br>
-              <a class="categories-link" href="#">
-                Small Plants
-              </a>
-              <br>
-              <a class="categories-link" href="#">
-                Big Plants
-              </a>
-              <br>
-              <a class="categories-link" href="#">
-                Succulents
-              </a>
-              <br>
-              <a class="categories-link" href="#">
-                Trerrariums
-              </a>
-              <br>
-              <a class="categories-link" href="#">
-                Gardening
-              </a>
-              <br>
-              <a class="categories-link" href="#">
-                Accessories
-              </a>
-            </div>
-          </div>
-          <a href="#">
-            <img class="image-sales" src="./images/sales.png" alt="sales" width="310" height="470">
-          </a>
-        </div>
-        <div class="cards-products-block">
-          <div class="sort-navigation">
-            <div class="sort-link">
-              <a class="sort-navigation-link" href="#">
-                All Plants
-              </a>
-              <a class="sort-navigation-link" href="#">
-                New Arrivals
-              </a>
-              <a class="sort-navigation-link" href="#">
-                Sale
-              </a>
-            </div>
-            <div class="sort-list">
-              <span class="right-sort-block">Sort by:</span>
-              <a class="right-sort" href="#">
-                Default sorting
-                <img class="arrow-down-sort-list" src="./images/arrow-down.png" alt="arrow-down" width="16"  height="16">
-              </a>
-            </div>
-          </div>
-          <div class="cards">
-            <div class="card">
-              <div class="image-background-card">
-                <img class="image-card" src="./images/image1.png" alt="Barberton Daisy" width="250" height="250">
-                <div class="card-hover">
-                  <button class="button-card-shopping button-card" type="button">
-                    <img class="card-hover-icon" src="./images/shopping-icon.png" alt="shopping-icon" width="20" height="20">
-                  </button>
-                  <button class="button-card-heart button-card" type="button">
-                    <img class="card-hover-icon" src="./images/heart-icon.png" alt="heart-icon" width="20" height="20">
-                  </button>
-                  <button class="button-card-frame button-card" type="button">
-                    <img class="card-hover-icon" src="./images/frame-icon.png" alt="frame-icon" width="20" height="20">
-                  </button>
-                </div>
-              </div>
-              <a class="link-card" href="#">
-                <h3 class="title-card">
-                  Barberton Daisy
-                </h3>
-                <p class="price">
-                  $119.00
-                </p>
-              </a>
-            </div>
-            <div class="card">
-              <div class="image-background-card">
-                <img src="./images/image2.png" alt="Angel Wing Begonia" width="250" height="250">
-                <div class="card-hover">
-                  <button class="button-card-shopping button-card" type="button">
-                    <img class="card-hover-icon" src="./images/shopping-icon.png" alt="shopping-icon" width="20" height="20">
-                  </button>
-                  <button class="button-card-heart button-card" type="button">
-                    <img class="card-hover-icon" src="./images/heart-icon.png" alt="heart-icon" width="20" height="20">
-                  </button>
-                  <button class="button-card-frame button-card" type="button">
-                    <img class="card-hover-icon" src="./images/frame-icon.png" alt="frame-icon" width="20" height="20">
-                  </button>
-                </div>
-              </div>
-              <a class="link-card" href="#">
-                <h3 class="title-card">
-                  Angel Wing Begonia
-                </h3>
-                <p class="price">
-                  $169.00
-                </p>
-              </a>
-            </div>
-            <div class="card">
-              <div class="image-background-card">
-                <img src="./images/image3.png" alt="African Violet" width="250" height="250">
-                <div class="card-hover">
-                  <button class="button-card-shopping button-card" type="button">
-                    <img class="card-hover-icon" src="./images/shopping-icon.png" alt="shopping-icon" width="20" height="20">
-                  </button>
-                  <button class="button-card-heart button-card" type="button">
-                    <img class="card-hover-icon" src="./images/heart-icon.png" alt="heart-icon" width="20" height="20">
-                  </button>
-                  <button class="button-card-frame button-card" type="button">
-                    <img class="card-hover-icon" src="./images/frame-icon.png" alt="frame-icon" width="20" height="20">
-                  </button>
-                </div>
-                <div class="sale-label">
-                  <p class="text-label-sale">
-                    13% off
-                  </p>
-                </div>
-              </div>
-              <a class="link-card" href="#">
-                <h3 class="title-card">
-                  African Violet
-                </h3>
-                <div class="prices-card">
-                  <p class="price">
-                    $199.00
-                  </p>
-                  <p class="old-price-card">
-                    $229.00
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="card">
-              <div class="image-background-card">
-                <img src="./images/image4.png" alt="Beach Spider Lily" width="224" height="286">
-                <div class="card-hover">
-                  <button class="button-card-shopping button-card" type="button">
-                    <img class="card-hover-icon" src="./images/shopping-icon.png" alt="shopping-icon" width="20" height="20">
-                  </button>
-                  <button class="button-card-heart button-card" type="button">
-                    <img class="card-hover-icon" src="./images/heart-icon.png" alt="heart-icon" width="20" height="20">
-                  </button>
-                  <button class="button-card-frame button-card" type="button">
-                    <img class="card-hover-icon" src="./images/frame-icon.png" alt="frame-icon" width="20" height="20">
-                  </button>
-                </div>
-              </div>
-              <a class="link-card" href="#">
-                <h3 class="title-card">
-                  Beach Spider Lily
-                </h3>
-                <p class="price">
-                  $129.00
-                </p>
-              </a>
-            </div>
-            <div class="card">
-              <div class="image-background-card">
-                <img src="./images/image5.png" alt="Blushing Bromeliad" width="250" height="250">
-                <div class="card-hover">
-                  <button class="button-card-shopping button-card" type="button">
-                    <img class="card-hover-icon" src="./images/shopping-icon.png" alt="shopping-icon" width="20" height="20">
-                  </button>
-                  <button class="button-card-heart button-card" type="button">
-                    <img class="card-hover-icon" src="./images/heart-icon.png" alt="heart-icon" width="20" height="20">
-                  </button>
-                  <button class="button-card-frame button-card" type="button">
-                    <img class="card-hover-icon" src="./images/frame-icon.png" alt="frame-icon" width="20" height="20">
-                  </button>
-                </div>
-              </div>
-              <a class="link-card" href="#">
-                <h3 class="title-card">
-                  Blushing Bromeliad
-                </h3>
-                <p class="price">
-                  $139.00
-                </p>
-              </a>
-            </div>
-            <div class="card">
-              <div class="image-background-card">
-                <img src="./images/image6.png" alt="Aluminum Plant" width="250" height="250">
-                <div class="card-hover">
-                  <button class="button-card-shopping button-card" type="button">
-                    <img class="card-hover-icon" src="./images/shopping-icon.png" alt="shopping-icon" width="20" height="20">
-                  </button>
-                  <button class="button-card-heart button-card" type="button">
-                    <img class="card-hover-icon" src="./images/heart-icon.png" alt="heart-icon" width="20" height="20">
-                  </button>
-                  <button class="button-card-frame button-card" type="button">
-                    <img class="card-hover-icon" src="./images/frame-icon.png" alt="frame-icon" width="20" height="20">
-                  </button>
-                </div>
-              </div>
-              <a class="link-card" href="#">
-                <h3 class="title-card">
-                  Aluminum Plant
-                </h3>
-                <p class="price">
-                  $179.00
-                </p>
-              </a>
-            </div>
-            <div class="card">
-              <div class="image-background-card">
-                <img src="./images/image7.png" alt="Bird's Nest Fern" width="250" height="250">
-                <div class="card-hover">
-                  <button class="button-card-shopping button-card" type="button">
-                    <img class="card-hover-icon" src="./images/shopping-icon.png" alt="shopping-icon" width="20" height="20">
-                  </button>
-                  <button class="button-card-heart button-card" type="button">
-                    <img class="card-hover-icon" src="./images/heart-icon.png" alt="heart-icon" width="20" height="20">
-                  </button>
-                  <button class="button-card-frame button-card" type="button">
-                    <img class="card-hover-icon" src="./images/frame-icon.png" alt="frame-icon" width="20" height="20">
-                  </button>
-                </div>
-              </div>
-              <a class="link-card" href="#">
-                <h3 class="title-card">
-                  Bird's Nest Fern
-                </h3>
-                <p class="price">
-                  $99.00
-                </p>
-              </a>
-            </div>
-            <div class="card">
-              <div class="image-background-card">
-                <img src="./images/image8.png" alt="Broadleaf Lady Palm" width="250" height="250">
-                <div class="card-hover">
-                  <button class="button-card-shopping button-card" type="button">
-                    <img class="card-hover-icon" src="./images/shopping-icon.png" alt="shopping-icon" width="20" height="20">
-                  </button>
-                  <button class="button-card-heart button-card" type="button">
-                    <img class="card-hover-icon" src="./images/heart-icon.png" alt="heart-icon" width="20" height="20">
-                  </button>
-                  <button class="button-card-frame button-card" type="button">
-                    <img class="card-hover-icon" src="./images/frame-icon.png" alt="frame-icon" width="20" height="20">
-                  </button>
-                </div>
-              </div>
-              <a class="link-card" href="#">
-                <h3 class="title-card">
-                  Broadleaf Lady Palm
-                </h3>
-                <p class="price">
-                  $59.00
-                </p>
-              </a>
-            </div>
-            <div class="card">
-              <div class="image-background-card">
-                <img src="./images/image9.png" alt="Chinese Evergreen" width="250" height="250">
-                <div class="card-hover">
-                  <button class="button-card-shopping button-card" type="button">
-                    <img class="card-hover-icon" src="./images/shopping-icon.png" alt="shopping-icon" width="20" height="20">
-                  </button>
-                  <button class="button-card-heart button-card" type="button">
-                    <img class="card-hover-icon" src="./images/heart-icon.png" alt="heart-icon" width="20" height="20">
-                  </button>
-                  <button class="button-card-frame button-card" type="button">
-                    <img class="card-hover-icon" src="./images/frame-icon.png" alt="frame-icon" width="20" height="20">
-                  </button>
-                </div>
-              </div>
-              <a class="link-card" href="#">
-                <h3 class="title-card">
-                  Chinese Evergreen
-                </h3>
-                <p class="price">
-                  $39.00
-                </p>
-              </a>
-            </div>
-          </div>
-          <div class="page-block">
-            <a class="link-page" href="#">
-              1
-            </a>
-            <a class="link-page" href="#">
-              2
-            </a>
-            <a class="link-page" href="#">
-              3
-            </a>
-            <a class="link-page" href="#">
-              4
-            </a>
-            <a class="link-page" href="#">
-              <img src="./images/arrow-right.png" alt="arrow-right" width="18" height="18">
-            </a>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="discription-flowers">
-          <div class="block-discription">
-            <img src="./images/image_desciption_1.png" alt="Summer cactus" width="287" height="292">
-            <div class="text-discription">
-              <h3 class="title-discription-flawers">
-                Summer cactus<br> & succulents
-              </h3>
-              <p class="discroption-flawers">
-                We are an online plant shop offering a wide range of cheap and trendy plants
-              </p>
-              <a class="find-more-link" href="#">
-                Find More
-                <img class="arrow-right-discription-card" src="./images/arrow-right-line.png" alt="arrow-right" width="18" height="18">
-              </a>
-            </div>
-          </div>
-          <div class="block-discription">
-            <img src="./images/image_desciption_2.png" alt="Summer cactus" width="287" height="292">
-            <div class="text-discription">
-              <h3 class="title-discription-flawers">
-                Summer cactus<br> & much more
-              </h3>
-              <p class="discroption-flawers">
-                We are an online plant shop offering a wide range of cheap and trendy plants
-              </p>
-              <a class="find-more-link" href="#">
-                 Find More
-                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-                <!-- <img class="arrow-right-discription-card" src="./images/arrow-right-line.png" alt="arrow-right" width="18" height="18"> -->
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="blog-section">
-          <div class="title-span-blog">
-            <h2 class="title-blog-section">
-              Our Blog Posts
-            </h2>
-            <p class="discription-blog-section">
-              We are an online plant shop offering a wide range of cheap and trendy plants. 
-            </p>
-          </div>
-          <div class="blog-cards">
-            <div class="blog-card">
-              <img class="image-blog-card" src="./images/image_blog_1.png" alt="Flower" width="268" height="195">
-              <div class="discription-blog-card">
-                <p class="date-blog-card">
-                  <time datetime="09-12">September 12</time> I Read in 6 minutes
-                </p>
-                <h3 class="title-card-blog">
-                  Cactus & Succulent Care Tips
-                </h3>
-                <p class="content-card-blog">
-                  Cacti are succulents are easy care plants for any home or patio. 
-                </p>
-                <a class="read-more-card-blog" href="#">
-                  Read More
-                  <span class="icon-Arrow---Right-sharp icon"></span>
-                  <!-- <img class="arrow-right-read-more-card" src="./images/arrow-right-card-blog.png" alt="arrow-right" width="16" height="16"> -->
-                  <!-- <img class="arrow-right-read-more-card" src="./images/arrow-right-green.png" alt="arrow-right" width="16" height="16"> -->
-                </a>
-              </div>
-            </div>
-            <div class="blog-card">
-              <img class="image-blog-card" src="./images/image_blog_2.png" alt="Flower" width="268" height="195">
-              <div class="discription-blog-card">
-                <p class="date-blog-card">
-                  <time datetime="09-13">September 13</time> I Read in 2 minutes
-                </p>
-                <h3 class="title-card-blog">
-                  Top 10 Succulents for Your Home
-                </h3>
-                <p class="content-card-blog">
-                  Best in hanging baskets. Prefers medium to high light.
-                </p>
-                <a class="read-more-card-blog" href="#">
-                  Read More
-                  <span class="icon-Arrow---Right-sharp icon"></span>
-                  <!-- <img class="arrow-right-read-more-card" src="./images/arrow-right-card-blog.png" alt="arrow-right" width="16" height="16"> -->
-                  <!-- <img class="arrow-right-read-more-card" src="./images/arrow-right-green.png" alt="arrow-right" width="16" height="16"> -->
-                </a>
-              </div>
-            </div>
-            <div class="blog-card">
-              <img class="image-blog-card" src="./images/image_blog_3.png" alt="Flower" width="268" height="195">
-              <div class="discription-blog-card">
-                <p class="date-blog-card">
-                  <time datetime="09-15">September 15</time> I Read in 3 minutes
-                </p>
-                <h3 class="title-card-blog">
-                  Cacti & Succulent Care Tips
-                </h3>
-                <p class="content-card-blog">
-                  Cacti and succulents thrive in containers and because most are..
-                </p>
-                <a class="read-more-card-blog" href="#">
-                  Read More
-                  <span class="icon-Arrow---Right-sharp icon"></span>
-                  <!-- <img class="arrow-right-read-more-card" src="./images/arrow-right-card-blog.png" alt="arrow-right" width="16" height="16"> -->
-                  <!-- <img class="arrow-right-read-more-card" src="./images/arrow-right-green.png" alt="arrow-right" width="16" height="16"> -->
-                </a>
-              </div>
-            </div>
-            <div class="blog-card">
-              <img class="image-blog-card" src="./images/image_blog_4.png" alt="Flower" width="268" height="195">
-              <div class="discription-blog-card">
-                <p class="date-blog-card">
-                  <time datetime="09-15">September 15</time> I Read in 2 minutes
-                </p>
-                <h3 class="title-card-blog">
-                  Best Houseplants Room by Room
-                </h3>
-                <p class="content-card-blog">
-                  The benefits of houseplants are endless. In addition to..
-                </p>
-                <a class="read-more-card-blog" href="#">
-                  Read More
-                  <span class="icon-Arrow---Right-sharp icon"></span>
-                  <!-- <img class="arrow-right-read-more-card" src="./images/arrow-right-card-blog.png" alt="arrow-right" width="16" height="16"> -->
-                  <!-- <img class="arrow-right-read-more-card" src="./images/arrow-right-green.png" alt="arrow-right" width="16" height="16"> -->
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <section class="cards-footer">
-        <div class="cadr_footer">
-          <img src="./images/picture_footer.svg" alt="cactus" width="77" height="96">
-          <h3 class="title-card-footer">Garden Care</h3>
-          <p class="discription-card-footer">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
-        </div>
-        <div class="line-footer-card"></div>
-        <div class="cadr_footer">
-          <img src="./images/picture_footer_2.svg" alt="cactus" width="88" height="93">
-          <h3 class="title-card-footer">Plant Renovation</h3>
-          <p class="discription-card-footer">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
-        </div>
-        <div class="line-footer-card"></div>
-        <div class="cadr_footer">
-          <img src="./images/picture_footer_3.svg" alt="cactus">
-          <h3 class="title-card-footer">Watering Graden</h3>
-          <p class="discription-card-footer">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
-        </div>
-        <div class="newsletter">
-          <h3 class="title-footer-newsletter">Would you like to join newsletters?</h3>
-          <form class="newsletter_imput_form" action="#">
-            <input 
-              class="newsletter_imput"
-              type="email"
-              name="email"
-              required
-              placeholder="enter your email address..." >
-              <button
-              type="submit"
-              class="join-to-newsletter">
-                Join
-              </button>
-          </form>
-          <p class="discription-newsletter">We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours! </p>
-        </div>
-      </section>
-      <section class="contact-information">
-        <div class="logo-footer">
-          <a href="index.html">
-            <img src="./images/logo-for-footer.svg" alt="greenshop" width="150" height="35">
-          </a>
-          <!-- <address> -->
-            <a class="address-footer" href="https://www.google.com/maps/search/70+West+Buckingham+Ave.+Farmingdale/@40.7294656,-73.4523395,14.93z?entry=ttu" target="_blank">
-              <img class="icon-address-footer" src="./images/address-icon.svg" alt="address" width="20" height="20">
-              <span class="icon-address-icon"></span>
-                70 West Buckingham Ave. <br> Farmingdale, NY 11735
-            </a>
-            <a class="address-footer" href="mailto:contact@greenshop.com">
-              <img class="icon-address-footer" src="./images/mail-icon.svg" alt="mail" width="20" height="20">
-              contact@greenshop.com
-            </a>
-            <a class="address-footer" href="tel:+8801911717490">
-              <img class="icon-address-footer" src="./images/tel-icon.svg" alt="tel" width="20" height="20">
-              +88 01911 717 490
-            </a>
-          <!-- </address> -->
-        </div>
-      </section>
-      <section class="footer-nav-block">
-        <div class="navigation-footer-account navigation-footer">
-          <h3 class="title-grop-link-footer title-footer-navigation">My Account</h3>
-          <a class="footer-link" href="#">My Account</a>
-          <a class="footer-link" href="#">Our stores</a>
-          <a class="footer-link" href="#">Contact us</a>
-          <a class="footer-link" href="#">Career</a>
-          <a class="footer-link" href="#">Specials</a>
-        </div>
-        <div class="help-guide navigation-footer">
-          <h3 class="title-grop-link-footer title-footer-navigation">Help & Guide</h3>
-          <a class="footer-link" href="#">Help Center</a>
-          <a class="footer-link" href="#">How to Buy</a>
-          <a class="footer-link" href="#">Shipping & Delivery</a>
-          <a class="footer-link" href="#">Product Policy</a>
-          <a class="footer-link" href="#">How to Return</a>
-        </div>
-        <div class="categories-link-footer navigation-footer">
-          <h3 class="title-grop-link-footer title-footer-navigation">Categories</h3>
-          <a class="footer-link" href="#">House Plants</a>
-          <a class="footer-link" href="#">Potter Plants</a>
-          <a class="footer-link" href="#">Seeds</a>
-          <a class="footer-link" href="#">Small Plants</a>
-          <a class="footer-link" href="#">Accessories</a>
-        </div>
-        <div class="social-media-block">
-          <h3 class="title-grop-link-footer">Social Media</h3>
-          <div class="links-social">
-            <a class="link-social" href="#">
-              <img src="./images/facebook-icon.svg" alt="Facebook"  width="8" height="16">
-            </a>
-            <a class="link-social" href="#">
-              <span class="icon-footer icon-Instagram"></span>
-              <!-- <img src="./images/instagram-icon.svg" alt="Facebook"  width="16" height="16"> -->
-            </a>
-            <a class="link-social" href="#">
-              <span class="icon-footer icon-Twitter"></span>
-              <!-- <img src="./images/twitter-icon.svg" alt="Facebook"  width="16" height="13"> -->
-            </a>
-            <a class="link-social" href="#">
-              <span class="icon-footer icon-Linkedin"></span>
-              <!-- <img src="./images/linkedin-icon.svg" alt="Facebook"  width="16" height="15"> -->
-            </a>
-            <a class="link-social" href="#">
-              <span class="icon-footer icon-Union"></span>
-              <!-- <img src="./images/union-icon.svg" alt="Facebook"  width="19" height="14"> -->
-            </a>
-          </div>
-          <div class="pay-metod">
-            <h3 class="title-grop-link-footer">We accept</h3>
-            <img src="./images/paymetde.svg" alt="pay-card">
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="copyright">
-          <p class="copyright-text">© 2021 GreenShop. All Rights Reserved.</p>
-        </div>
-      </section>
-      <div id="formsing" class="wrapper-log">
-        <span id="close-btn" class="icon-close close-btn"></span>
-        <!-- <img class="close-registration" src="./images/close-icon.png" alt="close-icon" width="18" height="18"> -->
-        <form class="inputs-form" action="https://fom.in.ua/echo" method="post" autocomplete="off">
-          <div>
-            <div class="link-block">
-              <a class="link-sing" href="#">
-                Login
-              </a>
-              <span class="separation">
-                I
-              </span>
-              <a class="link-sing" href="registration.html">
-                Register
-              </a>
-            </div>
-            <p class="text-reg">
-              Enter your email and password to register.
-            </p>
-            <div class="inputs">
-              <input class="input"
-                type="text"
-                name="username"
-                placeholder="Username"
-                required >
-              <input class="input"
-                type="email"
-                name="email"
-                required
-                placeholder="Enter your email address" >
-              <input class="input input-password" 
-                type="password"
-                name="password"
-                placeholder="Password"
-                minlength="8"
-                required >
-              <input class="input input-password"
-                id="password-check"
-                name="password-check"
-                type="password"
-                placeholder="Confirm Password"
-                title=""
-                required >
-            </div>
-              <button 
-                type="submit" class="btn-reg">
-                Register
-              </button>
-          </div>
-        </form>
-        <p class="text-reg">
-          Or register with
-        </p>
-        <div class="login-for-service">
-          <a class="link-log" href="#">
-            <img class="icon-service" src="./images/googleicn.jpg" alt="google-icn">
-            Continue with Google
-          </a>
-          <a class="link-log" href="#">
-            <img class="icon-service" src="./images/facebookicn.jpg" alt="facebook-icn">
-            Continue with Facebook
-          </a>
-        </div>
-      </div>
-  </div>
-  <script>
-    var modal = document.getElementById("formsing");
-    var openModalBtn = document.getElementById("opensind");
-    var closeModalBtn = document.getElementById("close-btn");
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>GREENSHOP</title>
+		<link rel="stylesheet" href="./style/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<script>
+			var modal = document.getElementById("formsing");
+			var openModalBtn = document.getElementById("opensind");
+			var closeModalBtn = document.getElementById("close-btn");
 
-    openModalBtn.onclick = function() {
-      modal.style.display = "block";
-    }
+			openModalBtn.onclick = function () {
+				modal.style.display = "block";
+			};
 
-    closeModalBtn.onclick = function() {
-      modal.style.display = "none";
-    }
+			closeModalBtn.onclick = function () {
+				modal.style.display = "none";
+			};
 
-    // Закрыть модальное окно при клике вне окна
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
+			// Закрыть модальное окно при клике вне окна
+			window.onclick = function (event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			};
 
-  </script>
-</body>
+			function showRegistration() {
+				const form = document.getElementById("registration-form");
+				form.classList.remove("hidden");
+				setTimeout(() => {
+					form.style.opacity = 1;
+				}, 10);
+			}
+		</script>
+
+		<div class="wrapper">
+			<header class="header">
+				<a class="logo" href="index.html">
+					<!-- <span class="icon-Logo-name logo-header"></span> -->
+					<img
+						class="imglogo"
+						src="./images/logo.png"
+						alt="logo_greenshop"
+						width="150"
+						height="34"
+					/>
+				</a>
+				<nav class="navigation-header">
+					<a class="link-nav" href="index.html">Home</a>
+					<a class="link-nav" href="#">Shop</a>
+					<div class="navigation-item-list">
+						<a class="link-nav link-nav-sub-list" href="#">Plant Care</a>
+						<div class="sub-list-item">
+							<div class="sub-list-color">
+								<a href="#" class="sub-list">Drainage</a>
+								<a href="#" class="sub-list">Fungicides</a>
+								<a href="#" class="sub-list">Fertilizer</a>
+								<div class="sub-list-item-level2">
+									<a href="#" class="sub-list sub-level-2"
+										>Priming
+										<span class="icon-right-arrow-menu"></span>
+										<!-- <img class="arrow-right-sublist" src="./images/arrow-right-sub-list.png" alt="arrow-right" width="6" height="10"> -->
+										<!-- <img class="arrow-left-sublist" src="./images/arrow-left-sub-list.png" alt="arrow-left" width="6" height="10"> -->
+									</a>
+									<div class="navigation-sublist2">
+										<div class="sub-list-padding-2-level">
+											<a href="#" class="sub-list">Universal</a>
+											<a href="#" class="sub-list">For Ficus</a>
+											<a href="#" class="sub-list">For Cacti</a>
+											<a href="#" class="sub-list">For Citrus</a>
+											<a href="#" class="sub-list">For those in bloom</a>
+											<a href="#" class="sub-list">For Orchids</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="link-nav" href="#">Blog</a>
+				</nav>
+				<div class="block-right-header">
+					<button class="button-header-search">
+						<span class="icon-header icon-Search"></span>
+					</button>
+					<span class="icon-header icon-Card"></span>
+					<button id="opensind" type="button" class="button-login">
+						<img
+							class="icon-log"
+							src="./images/iconlogin.png"
+							alt="icon-logo"
+							width="20"
+							height="20"
+						/>
+						Login
+					</button>
+				</div>
+			</header>
+			<section class="content">
+				<div class="block-left-header">
+					<h1 class="text-content welcome-text">Welcome to GreenShop</h1>
+					<h2 class="text-title">
+						Let’s Make a Better <span class="text-green">Planet</span>
+					</h2>
+					<p class="text-descr">
+						We are an online plant shop offering a wide range of cheap and
+						trendy plants. Use our plants to create an unique Urban Jungle.
+						Order your favorite plants!
+					</p>
+					<a class="link-shop" href="#"> SHOP NOW </a>
+				</div>
+				<div class="image-right-header">
+					<img
+						src="./images/flower.png"
+						alt="flower"
+						width="507"
+						height="450"
+					/>
+				</div>
+			</section>
+			<main>
+				<section class="main-section">
+					<div class="navigation-categories">
+						<div class="categories">
+							<h2 class="title-navigation">Categories</h2>
+							<div class="block-link-navigation">
+								<a class="categories-link" href="#"> House Plants </a>
+								<br />
+								<a class="categories-link" href="#"> Potter Plants </a>
+								<br />
+								<a class="categories-link" href="#"> Seeds </a>
+								<br />
+								<a class="categories-link" href="#"> Small Plants </a>
+								<br />
+								<a class="categories-link" href="#"> Big Plants </a>
+								<br />
+								<a class="categories-link" href="#"> Succulents </a>
+								<br />
+								<a class="categories-link" href="#"> Trerrariums </a>
+								<br />
+								<a class="categories-link" href="#"> Gardening </a>
+								<br />
+								<a class="categories-link" href="#"> Accessories </a>
+							</div>
+						</div>
+						<a href="#">
+							<img
+								class="image-sales"
+								src="./images/sales.png"
+								alt="sales"
+								width="310"
+								height="470"
+							/>
+						</a>
+					</div>
+					<div class="cards-products-block">
+						<div class="sort-navigation">
+							<div class="sort-link">
+								<a class="sort-navigation-link" href="#"> All Plants </a>
+								<a class="sort-navigation-link" href="#"> New Arrivals </a>
+								<a class="sort-navigation-link" href="#"> Sale </a>
+							</div>
+							<div class="sort-list">
+								<span class="right-sort-block">Sort by:</span>
+								<a class="right-sort" href="#">
+									Default sorting
+									<img
+										class="arrow-down-sort-list"
+										src="./images/arrow-down.png"
+										alt="arrow-down"
+										width="16"
+										height="16"
+									/>
+								</a>
+							</div>
+						</div>
+						<div class="cards">
+							<div class="card">
+								<div class="image-background-card">
+									<img
+										class="image-card"
+										src="./images/image1.png"
+										alt="Barberton Daisy"
+										width="250"
+										height="250"
+									/>
+									<div class="card-hover">
+										<button
+											class="button-card-shopping button-card"
+											type="button"
+										>
+											<img
+												class="card-hover-icon"
+												src="./images/shopping-icon.png"
+												alt="shopping-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+										<button class="button-card-heart button-card" type="button">
+											<img
+												class="card-hover-icon"
+												src="./images/heart-icon.png"
+												alt="heart-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+										<button class="button-card-frame button-card" type="button">
+											<img
+												class="card-hover-icon"
+												src="./images/frame-icon.png"
+												alt="frame-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+									</div>
+								</div>
+								<a class="link-card" href="#">
+									<h3 class="title-card">Barberton Daisy</h3>
+									<p class="price">$119.00</p>
+								</a>
+							</div>
+							<div class="card">
+								<div class="image-background-card">
+									<img
+										src="./images/image2.png"
+										alt="Angel Wing Begonia"
+										width="250"
+										height="250"
+									/>
+									<div class="card-hover">
+										<button
+											class="button-card-shopping button-card"
+											type="button"
+										>
+											<img
+												class="card-hover-icon"
+												src="./images/shopping-icon.png"
+												alt="shopping-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+										<button class="button-card-heart button-card" type="button">
+											<img
+												class="card-hover-icon"
+												src="./images/heart-icon.png"
+												alt="heart-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+										<button class="button-card-frame button-card" type="button">
+											<img
+												class="card-hover-icon"
+												src="./images/frame-icon.png"
+												alt="frame-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+									</div>
+								</div>
+								<a class="link-card" href="#">
+									<h3 class="title-card">Angel Wing Begonia</h3>
+									<p class="price">$169.00</p>
+								</a>
+							</div>
+							<div class="card">
+								<div class="image-background-card">
+									<img
+										src="./images/image3.png"
+										alt="African Violet"
+										width="250"
+										height="250"
+									/>
+									<div class="card-hover">
+										<button
+											class="button-card-shopping button-card"
+											type="button"
+										>
+											<img
+												class="card-hover-icon"
+												src="./images/shopping-icon.png"
+												alt="shopping-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+										<button class="button-card-heart button-card" type="button">
+											<img
+												class="card-hover-icon"
+												src="./images/heart-icon.png"
+												alt="heart-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+										<button class="button-card-frame button-card" type="button">
+											<img
+												class="card-hover-icon"
+												src="./images/frame-icon.png"
+												alt="frame-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+									</div>
+									<div class="sale-label">
+										<p class="text-label-sale">13% off</p>
+									</div>
+								</div>
+								<a class="link-card" href="#">
+									<h3 class="title-card">African Violet</h3>
+									<div class="prices-card">
+										<p class="price">$199.00</p>
+										<p class="old-price-card">$229.00</p>
+									</div>
+								</a>
+							</div>
+							<div class="card">
+								<div class="image-background-card">
+									<img
+										src="./images/image4.png"
+										alt="Beach Spider Lily"
+										width="224"
+										height="286"
+									/>
+									<div class="card-hover">
+										<button
+											class="button-card-shopping button-card"
+											type="button"
+										>
+											<img
+												class="card-hover-icon"
+												src="./images/shopping-icon.png"
+												alt="shopping-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+										<button class="button-card-heart button-card" type="button">
+											<img
+												class="card-hover-icon"
+												src="./images/heart-icon.png"
+												alt="heart-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+										<button class="button-card-frame button-card" type="button">
+											<img
+												class="card-hover-icon"
+												src="./images/frame-icon.png"
+												alt="frame-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+									</div>
+								</div>
+								<a class="link-card" href="#">
+									<h3 class="title-card">Beach Spider Lily</h3>
+									<p class="price">$129.00</p>
+								</a>
+							</div>
+							<div class="card">
+								<div class="image-background-card">
+									<img
+										src="./images/image5.png"
+										alt="Blushing Bromeliad"
+										width="250"
+										height="250"
+									/>
+									<div class="card-hover">
+										<button
+											class="button-card-shopping button-card"
+											type="button"
+										>
+											<img
+												class="card-hover-icon"
+												src="./images/shopping-icon.png"
+												alt="shopping-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+										<button class="button-card-heart button-card" type="button">
+											<img
+												class="card-hover-icon"
+												src="./images/heart-icon.png"
+												alt="heart-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+										<button class="button-card-frame button-card" type="button">
+											<img
+												class="card-hover-icon"
+												src="./images/frame-icon.png"
+												alt="frame-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+									</div>
+								</div>
+								<a class="link-card" href="#">
+									<h3 class="title-card">Blushing Bromeliad</h3>
+									<p class="price">$139.00</p>
+								</a>
+							</div>
+							<div class="card">
+								<div class="image-background-card">
+									<img
+										src="./images/image6.png"
+										alt="Aluminum Plant"
+										width="250"
+										height="250"
+									/>
+									<div class="card-hover">
+										<button
+											class="button-card-shopping button-card"
+											type="button"
+										>
+											<img
+												class="card-hover-icon"
+												src="./images/shopping-icon.png"
+												alt="shopping-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+										<button class="button-card-heart button-card" type="button">
+											<img
+												class="card-hover-icon"
+												src="./images/heart-icon.png"
+												alt="heart-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+										<button class="button-card-frame button-card" type="button">
+											<img
+												class="card-hover-icon"
+												src="./images/frame-icon.png"
+												alt="frame-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+									</div>
+								</div>
+								<a class="link-card" href="#">
+									<h3 class="title-card">Aluminum Plant</h3>
+									<p class="price">$179.00</p>
+								</a>
+							</div>
+							<div class="card">
+								<div class="image-background-card">
+									<img
+										src="./images/image7.png"
+										alt="Bird's Nest Fern"
+										width="250"
+										height="250"
+									/>
+									<div class="card-hover">
+										<button
+											class="button-card-shopping button-card"
+											type="button"
+										>
+											<img
+												class="card-hover-icon"
+												src="./images/shopping-icon.png"
+												alt="shopping-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+										<button class="button-card-heart button-card" type="button">
+											<img
+												class="card-hover-icon"
+												src="./images/heart-icon.png"
+												alt="heart-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+										<button class="button-card-frame button-card" type="button">
+											<img
+												class="card-hover-icon"
+												src="./images/frame-icon.png"
+												alt="frame-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+									</div>
+								</div>
+								<a class="link-card" href="#">
+									<h3 class="title-card">Bird's Nest Fern</h3>
+									<p class="price">$99.00</p>
+								</a>
+							</div>
+							<div class="card">
+								<div class="image-background-card">
+									<img
+										src="./images/image8.png"
+										alt="Broadleaf Lady Palm"
+										width="250"
+										height="250"
+									/>
+									<div class="card-hover">
+										<button
+											class="button-card-shopping button-card"
+											type="button"
+										>
+											<img
+												class="card-hover-icon"
+												src="./images/shopping-icon.png"
+												alt="shopping-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+										<button class="button-card-heart button-card" type="button">
+											<img
+												class="card-hover-icon"
+												src="./images/heart-icon.png"
+												alt="heart-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+										<button class="button-card-frame button-card" type="button">
+											<img
+												class="card-hover-icon"
+												src="./images/frame-icon.png"
+												alt="frame-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+									</div>
+								</div>
+								<a class="link-card" href="#">
+									<h3 class="title-card">Broadleaf Lady Palm</h3>
+									<p class="price">$59.00</p>
+								</a>
+							</div>
+							<div class="card">
+								<div class="image-background-card">
+									<img
+										src="./images/image9.png"
+										alt="Chinese Evergreen"
+										width="250"
+										height="250"
+									/>
+									<div class="card-hover">
+										<button
+											class="button-card-shopping button-card"
+											type="button"
+										>
+											<img
+												class="card-hover-icon"
+												src="./images/shopping-icon.png"
+												alt="shopping-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+										<button class="button-card-heart button-card" type="button">
+											<img
+												class="card-hover-icon"
+												src="./images/heart-icon.png"
+												alt="heart-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+										<button class="button-card-frame button-card" type="button">
+											<img
+												class="card-hover-icon"
+												src="./images/frame-icon.png"
+												alt="frame-icon"
+												width="20"
+												height="20"
+											/>
+										</button>
+									</div>
+								</div>
+								<a class="link-card" href="#">
+									<h3 class="title-card">Chinese Evergreen</h3>
+									<p class="price">$39.00</p>
+								</a>
+							</div>
+						</div>
+						<div class="page-block">
+							<a class="link-page" href="#"> 1 </a>
+							<a class="link-page" href="#"> 2 </a>
+							<a class="link-page" href="#"> 3 </a>
+							<a class="link-page" href="#"> 4 </a>
+							<a class="link-page" href="#">
+								<img
+									src="./images/arrow-right.png"
+									alt="arrow-right"
+									width="18"
+									height="18"
+								/>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="discription-flowers">
+						<div class="block-discription">
+							<img
+								src="./images/image_desciption_1.png"
+								alt="Summer cactus"
+								width="287"
+								height="292"
+							/>
+							<div class="text-discription">
+								<h3 class="title-discription-flawers">
+									Summer cactus<br />
+									& succulents
+								</h3>
+								<p class="discroption-flawers">
+									We are an online plant shop offering a wide range of cheap and
+									trendy plants
+								</p>
+								<a class="find-more-link" href="#">
+									Find More
+									<img
+										class="arrow-right-discription-card"
+										src="./images/arrow-right-line.png"
+										alt="arrow-right"
+										width="18"
+										height="18"
+									/>
+								</a>
+							</div>
+						</div>
+						<div class="block-discription">
+							<img
+								src="./images/image_desciption_2.png"
+								alt="Summer cactus"
+								width="287"
+								height="292"
+							/>
+							<div class="text-discription">
+								<h3 class="title-discription-flawers">
+									Summer cactus<br />
+									& much more
+								</h3>
+								<p class="discroption-flawers">
+									We are an online plant shop offering a wide range of cheap and
+									trendy plants
+								</p>
+								<a class="find-more-link" href="#">
+									Find More
+									<div class="lds-ring">
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
+									<!-- <img class="arrow-right-discription-card" src="./images/arrow-right-line.png" alt="arrow-right" width="18" height="18"> -->
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="blog-section">
+						<div class="title-span-blog">
+							<h2 class="title-blog-section">Our Blog Posts</h2>
+							<p class="discription-blog-section">
+								We are an online plant shop offering a wide range of cheap and
+								trendy plants.
+							</p>
+						</div>
+						<div class="blog-cards">
+							<div class="blog-card">
+								<img
+									class="image-blog-card"
+									src="./images/image_blog_1.png"
+									alt="Flower"
+									width="268"
+									height="195"
+								/>
+								<div class="discription-blog-card">
+									<p class="date-blog-card">
+										<time datetime="09-12">September 12</time> I Read in 6
+										minutes
+									</p>
+									<h3 class="title-card-blog">Cactus & Succulent Care Tips</h3>
+									<p class="content-card-blog">
+										Cacti are succulents are easy care plants for any home or
+										patio.
+									</p>
+									<a class="read-more-card-blog" href="#">
+										Read More
+										<span class="icon-Arrow---Right-sharp icon"></span>
+										<!-- <img class="arrow-right-read-more-card" src="./images/arrow-right-card-blog.png" alt="arrow-right" width="16" height="16"> -->
+										<!-- <img class="arrow-right-read-more-card" src="./images/arrow-right-green.png" alt="arrow-right" width="16" height="16"> -->
+									</a>
+								</div>
+							</div>
+							<div class="blog-card">
+								<img
+									class="image-blog-card"
+									src="./images/image_blog_2.png"
+									alt="Flower"
+									width="268"
+									height="195"
+								/>
+								<div class="discription-blog-card">
+									<p class="date-blog-card">
+										<time datetime="09-13">September 13</time> I Read in 2
+										minutes
+									</p>
+									<h3 class="title-card-blog">
+										Top 10 Succulents for Your Home
+									</h3>
+									<p class="content-card-blog">
+										Best in hanging baskets. Prefers medium to high light.
+									</p>
+									<a class="read-more-card-blog" href="#">
+										Read More
+										<span class="icon-Arrow---Right-sharp icon"></span>
+										<!-- <img class="arrow-right-read-more-card" src="./images/arrow-right-card-blog.png" alt="arrow-right" width="16" height="16"> -->
+										<!-- <img class="arrow-right-read-more-card" src="./images/arrow-right-green.png" alt="arrow-right" width="16" height="16"> -->
+									</a>
+								</div>
+							</div>
+							<div class="blog-card">
+								<img
+									class="image-blog-card"
+									src="./images/image_blog_3.png"
+									alt="Flower"
+									width="268"
+									height="195"
+								/>
+								<div class="discription-blog-card">
+									<p class="date-blog-card">
+										<time datetime="09-15">September 15</time> I Read in 3
+										minutes
+									</p>
+									<h3 class="title-card-blog">Cacti & Succulent Care Tips</h3>
+									<p class="content-card-blog">
+										Cacti and succulents thrive in containers and because most
+										are..
+									</p>
+									<a class="read-more-card-blog" href="#">
+										Read More
+										<span class="icon-Arrow---Right-sharp icon"></span>
+										<!-- <img class="arrow-right-read-more-card" src="./images/arrow-right-card-blog.png" alt="arrow-right" width="16" height="16"> -->
+										<!-- <img class="arrow-right-read-more-card" src="./images/arrow-right-green.png" alt="arrow-right" width="16" height="16"> -->
+									</a>
+								</div>
+							</div>
+							<div class="blog-card">
+								<img
+									class="image-blog-card"
+									src="./images/image_blog_4.png"
+									alt="Flower"
+									width="268"
+									height="195"
+								/>
+								<div class="discription-blog-card">
+									<p class="date-blog-card">
+										<time datetime="09-15">September 15</time> I Read in 2
+										minutes
+									</p>
+									<h3 class="title-card-blog">Best Houseplants Room by Room</h3>
+									<p class="content-card-blog">
+										The benefits of houseplants are endless. In addition to..
+									</p>
+									<a class="read-more-card-blog" href="#">
+										Read More
+										<span class="icon-Arrow---Right-sharp icon"></span>
+										<!-- <img class="arrow-right-read-more-card" src="./images/arrow-right-card-blog.png" alt="arrow-right" width="16" height="16"> -->
+										<!-- <img class="arrow-right-read-more-card" src="./images/arrow-right-green.png" alt="arrow-right" width="16" height="16"> -->
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer>
+				<section class="cards-footer">
+					<div class="cadr_footer">
+						<img
+							src="./images/picture_footer.svg"
+							alt="cactus"
+							width="77"
+							height="96"
+						/>
+						<h3 class="title-card-footer">Garden Care</h3>
+						<p class="discription-card-footer">
+							We are an online plant shop offering a wide range of cheap and
+							trendy plants.
+						</p>
+					</div>
+					<div class="line-footer-card"></div>
+					<div class="cadr_footer">
+						<img
+							src="./images/picture_footer_2.svg"
+							alt="cactus"
+							width="88"
+							height="93"
+						/>
+						<h3 class="title-card-footer">Plant Renovation</h3>
+						<p class="discription-card-footer">
+							We are an online plant shop offering a wide range of cheap and
+							trendy plants.
+						</p>
+					</div>
+					<div class="line-footer-card"></div>
+					<div class="cadr_footer">
+						<img src="./images/picture_footer_3.svg" alt="cactus" />
+						<h3 class="title-card-footer">Watering Graden</h3>
+						<p class="discription-card-footer">
+							We are an online plant shop offering a wide range of cheap and
+							trendy plants.
+						</p>
+					</div>
+					<div class="newsletter">
+						<h3 class="title-footer-newsletter">
+							Would you like to join newsletters?
+						</h3>
+						<form class="newsletter_imput_form" action="#">
+							<input
+								class="newsletter_imput"
+								type="email"
+								name="email"
+								required
+								placeholder="enter your email address..."
+							/>
+							<button type="submit" class="join-to-newsletter">Join</button>
+						</form>
+						<p class="discription-newsletter">
+							We usually post offers and challenges in newsletter. We’re your
+							online houseplant destination. We offer a wide range of
+							houseplants and accessories shipped directly from our (green)house
+							to yours!
+						</p>
+					</div>
+				</section>
+				<section class="contact-information">
+					<div class="logo-footer">
+						<a href="index.html">
+							<img
+								src="./images/logo-for-footer.svg"
+								alt="greenshop"
+								width="150"
+								height="35"
+							/>
+						</a>
+						<!-- <address> -->
+						<a
+							class="address-footer"
+							href="https://www.google.com/maps/search/70+West+Buckingham+Ave.+Farmingdale/@40.7294656,-73.4523395,14.93z?entry=ttu"
+							target="_blank"
+						>
+							<img
+								class="icon-address-footer"
+								src="./images/address-icon.svg"
+								alt="address"
+								width="20"
+								height="20"
+							/>
+							<span class="icon-address-icon"></span>
+							70 West Buckingham Ave. <br />
+							Farmingdale, NY 11735
+						</a>
+						<a class="address-footer" href="mailto:contact@greenshop.com">
+							<img
+								class="icon-address-footer"
+								src="./images/mail-icon.svg"
+								alt="mail"
+								width="20"
+								height="20"
+							/>
+							contact@greenshop.com
+						</a>
+						<a class="address-footer" href="tel:+8801911717490">
+							<img
+								class="icon-address-footer"
+								src="./images/tel-icon.svg"
+								alt="tel"
+								width="20"
+								height="20"
+							/>
+							+88 01911 717 490
+						</a>
+						<!-- </address> -->
+					</div>
+				</section>
+				<section class="footer-nav-block">
+					<div class="navigation-footer-account navigation-footer">
+						<h3 class="title-grop-link-footer title-footer-navigation">
+							My Account
+						</h3>
+						<a class="footer-link" href="#">My Account</a>
+						<a class="footer-link" href="#">Our stores</a>
+						<a class="footer-link" href="#">Contact us</a>
+						<a class="footer-link" href="#">Career</a>
+						<a class="footer-link" href="#">Specials</a>
+					</div>
+					<div class="help-guide navigation-footer">
+						<h3 class="title-grop-link-footer title-footer-navigation">
+							Help & Guide
+						</h3>
+						<a class="footer-link" href="#">Help Center</a>
+						<a class="footer-link" href="#">How to Buy</a>
+						<a class="footer-link" href="#">Shipping & Delivery</a>
+						<a class="footer-link" href="#">Product Policy</a>
+						<a class="footer-link" href="#">How to Return</a>
+					</div>
+					<div class="categories-link-footer navigation-footer">
+						<h3 class="title-grop-link-footer title-footer-navigation">
+							Categories
+						</h3>
+						<a class="footer-link" href="#">House Plants</a>
+						<a class="footer-link" href="#">Potter Plants</a>
+						<a class="footer-link" href="#">Seeds</a>
+						<a class="footer-link" href="#">Small Plants</a>
+						<a class="footer-link" href="#">Accessories</a>
+					</div>
+					<div class="social-media-block">
+						<h3 class="title-grop-link-footer">Social Media</h3>
+						<div class="links-social">
+							<a class="link-social" href="#">
+								<img
+									src="./images/facebook-icon.svg"
+									alt="Facebook"
+									width="8"
+									height="16"
+								/>
+							</a>
+							<a class="link-social" href="#">
+								<span class="icon-footer icon-Instagram"></span>
+								<!-- <img src="./images/instagram-icon.svg" alt="Facebook"  width="16" height="16"> -->
+							</a>
+							<a class="link-social" href="#">
+								<span class="icon-footer icon-Twitter"></span>
+								<!-- <img src="./images/twitter-icon.svg" alt="Facebook"  width="16" height="13"> -->
+							</a>
+							<a class="link-social" href="#">
+								<span class="icon-footer icon-Linkedin"></span>
+								<!-- <img src="./images/linkedin-icon.svg" alt="Facebook"  width="16" height="15"> -->
+							</a>
+							<a class="link-social" href="#">
+								<span class="icon-footer icon-Union"></span>
+								<!-- <img src="./images/union-icon.svg" alt="Facebook"  width="19" height="14"> -->
+							</a>
+						</div>
+						<div class="pay-metod">
+							<h3 class="title-grop-link-footer">We accept</h3>
+							<img src="./images/paymetde.svg" alt="pay-card" />
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="copyright">
+						<p class="copyright-text">
+							© 2021 GreenShop. All Rights Reserved.
+						</p>
+					</div>
+				</section>
+			</footer>
+			<div id="formsing" class="wrapper-log">
+				<span id="close-btn" class="icon-close close-btn"></span>
+				<!-- <img class="close-registration" src="./images/close-icon.png" alt="close-icon" width="18" height="18"> -->
+				<form
+					class="inputs-form"
+					action="https://fom.in.ua/echo"
+					method="post"
+					autocomplete="off"
+				>
+					<div>
+						<div class="link-block">
+							<a class="link-sing" href="#"> Login </a>
+							<span class="separation"> I </span>
+							<a class="link-sing" href="registration.html"> Register </a>
+						</div>
+						<p class="text-reg">Enter your email and password to register.</p>
+						<div class="inputs">
+							<input
+								class="input"
+								type="text"
+								name="username"
+								placeholder="Username"
+								required
+							/>
+							<input
+								class="input"
+								type="email"
+								name="email"
+								required
+								placeholder="Enter your email address"
+							/>
+							<input
+								class="input input-password"
+								type="password"
+								name="password"
+								placeholder="Password"
+								minlength="8"
+								required
+							/>
+							<input
+								class="input input-password"
+								id="password-check"
+								name="password-check"
+								type="password"
+								placeholder="Confirm Password"
+								title=""
+								required
+							/>
+						</div>
+						<button type="submit" class="btn-reg">Register</button>
+					</div>
+				</form>
+				<p class="text-reg">Or register with</p>
+				<div class="login-for-service">
+					<a class="link-log" href="#">
+						<img
+							class="icon-service"
+							src="./images/googleicn.jpg"
+							alt="google-icn"
+						/>
+						Continue with Google
+					</a>
+					<a class="link-log" href="#">
+						<img
+							class="icon-service"
+							src="./images/facebookicn.jpg"
+							alt="facebook-icn"
+						/>
+						Continue with Facebook
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
