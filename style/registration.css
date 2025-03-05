@@ -1,10 +1,10 @@
-/* .position-modul {
+.position-modul {
   box-shadow: inset;
   position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
-} */
+}
 
 .wrapper-log {
   /* width: 500px; */
@@ -24,7 +24,7 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   
-  opacity: 0;
+  /*opacity: 0;*/
   transition: opacity 4s ease-in-out;
 }
 /* .close-btn {
@@ -128,6 +128,11 @@
   gap: 9px;
 }
 
+.link-log:hover {
+  background: rgba(151, 149, 149, 0.1);
+  transition: 0.2s ease-in-out;
+}
+
 
 
 .icon-service {
@@ -147,4 +152,27 @@
   font-size: 16px;
   line-height: 16px;
   color: #ffffff;
+}
+
+#formsing {
+  display: none; /* Скрыто изначально */
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  position: fixed; /* Делаем фиксированным */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+#formsing.show {
+  display: block;
+}
+
+#formsing.fade-in {
+  opacity: 1;
+}
+
+#formsing.fade-out {
+  opacity: 0;
 }
