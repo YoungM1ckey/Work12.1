@@ -180,6 +180,15 @@
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
+  display: flex;
+}
+
+.sub-list-item-level2:hover .icon-Arrow---Right-sharp {
+  color: #ffffff;
+}
+
+.sub-list-item-level2:hover {
+  background-color: #1a712a;
 }
 
 .sub-list-item-level2:hover .sub-level-2 .arrow-right-sublist {
@@ -200,6 +209,9 @@
 .sub-list-item-level2 {
   /* display: flex; */
   justify-content: space-between;
+  padding-right: 17px;
+  display: flex;
+  align-items: center;
 }
 
 .navigation-sublist2 {
